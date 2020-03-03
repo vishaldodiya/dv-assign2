@@ -1,7 +1,15 @@
 main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    text-align: center;
 }
 
 .tooltip {
@@ -14,6 +22,15 @@ main {
     top: 0px;
 }
 
+#scatter {
+    margin-top: 50px;
+}
+
 #scatter svg circle {
     cursor: pointer;
+}
+
+.players .player1, .players .player2 {
+    font-weight: 600;
+    font-size: 20px;
 }

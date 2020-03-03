@@ -18,9 +18,10 @@ const util = {
         return output;
     },
     getScaleDomain: (data, key) => {
+        const _self = util;
         return [
-            d3.min(data, (d) => d[key]),
-            d3.max(data, (d) => d[key])
+            d3.min(data, (d) => _self.getInt(d[key])),
+            d3.max(data, (d) => _self.getInt(d[key]))
         ];
     },
     getInt: (num) => {
